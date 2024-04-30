@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            background: rgb(176, 176, 176);
+            /* animation: появление 1s ease-out; */
+        }
+
+        /* @keyframes появление {
+            from {
+                opacity: 0;
+                background: white;
+            }
+            to {
+                opacity: 1;
+                background: rgb(176, 176, 176);
+            }
+        } */
+        
+
+        .zag{
+        text-align: center;
+        background-color: rgb(176, 176, 176);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: white;
+        height: 45px;
+        font-family: 'Montserrat', sans-serif;
+        }
+
+        .r {
+            margin: 20px; /* Отступы относительно страницы */
+            background: rgb(220, 220, 220);
+            border-radius: 8px;
+            position: relative; /* Устанавливаем позиционирование как относительное */
+        }
+
+        .photo{
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .video {
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 200px;
+        }
+        .videotext{
+            position: absolute;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .bay{
+            position: absolute;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-left: 230px;
+            font-weight: bold;
+        }
+        .ing{
+            position: absolute;
+            margin-top: 60px;
+            margin-left: 35px;
+            font-size: 20px;
+        }
+        .got{
+            font-size: 24px;
+            margin-left: 450px;
+            font-weight: bold;
+        }
+        .rep{
+            font-size: 24px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        hr {
+            border: 0; /* Убираем стандартную границу */
+            border-top: 5px solid rgb(176, 176, 176); /* Задаем жирную горизонтальную линию */
+        }
+        .rep1{
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        .back-button {
+            position: absolute;
+            background-color: rgba(220, 220, 220, 0.5); /* Цвет кнопки с прозрачностью */
+            color: black; /* Цвет текста */
+            border: none; /* Убираем границу */
+            padding: 10px 20px; /* Отступы внутри кнопки */
+            font-size: 16px; /* Размер шрифта */
+            cursor: pointer; /* Изменение курсора при наведении */
+            border-radius: 5px; /* Закругление углов */
+            margin-top: -40px;
+            margin-left: 20px;
+        }
+
+        /* Стилизация стрелки */
+        .back-button::before {
+            content: "\2190"; /* Код символа стрелки */
+            margin-right: 5px; /* Отступ между стрелкой и текстом */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="zag">Cooking Store</h1>
+    <button class="back-button" onclick="redirectToGallery()">На главную страницу</button>
+    <div class="r">
+        <img src="55.png" class="photo" alt="Photo 1" width="500" height="400" class="image-with-shadow" border-radius="8px">
+        <a class="bay">Ингридиенты</a>
+        <a class="ing">
+            1. Куриное филе - 340 г (2 шт.).<br/>
+            2. Рис (у меня басмати) - 140 г.<br/>
+            3. Морковь (крупная) - 80 г (0,25 шт).<br/>
+            4. Лук репчатый (некрупный) - 80 г (1 шт.).<br/>
+            5. Чеснок (крупный) - 8 г (1 зубчик).<br/>
+            6. Соль - по вкусу.<br/>
+            7. Перец чёрный молотый - 0,25 ч. ложки (по вкусу).<br/>
+            8. Масло подсолнечное - 30-45 мл (2-3 ст. ложки).
+        </a>
+        <br/>
+        <hr>
+        <a class="got">Процесс приготовления<br/></a>
+        <iframe class="video" width="400" height="200" src="https://www.youtube.com/embed/9NERg6r329E" frameborder="0" allowfullscreen></iframe>
+        <a class="videotext">Посмотрите обучабщее видео или<br/> следуйте инструкции ниже</a>
+        <br/>
+        <br/>
+        <hr>
+        <a class="rep">Рецепт</a>
+        <br/>
+        <br/>
+        <div class="rep1">
+            <a>
+                1. Подготовьте необходимые ингредиенты. Также для готовки понадобится 450 мл кипятка.<br/>
+                <br/>
+                2. Куриное филе без кожи промойте, обсушите с помощью бумажного полотенца и выложите на разделочную доску.<br/> 
+                Острым ножом сделайте на верхней стороне каждой куриной грудки ромбовидные насечки, прорезая примерно до половины.<br/>
+                <br/>
+                3. Подготовленное филе натрите солью и чёрным молотым перцем.<br/>
+                <br/>
+                4. В сковороде разогрейте подсолнечное масло и выложите туда куриное филе надрезами вверх.<br/>
+                <br/>
+                5. Обжарьте филе на среднем огне по 5 минут с каждой стороны.<br/>
+                <br/>
+                6. Лук очистите и нарежьте полукольцами.<br/>
+                <br/>
+                7. Очищенную морковь нарежьте полукружиями.<br/>
+                <br/>
+                8. Крупный зубчик чеснока очистите от шелухи и нарежьте пластинками.<br/>
+                <br/>
+                9. Обжаренное куриное филе переложите в тарелку.<br/>
+                <br/>
+                10. В освободившуюся сковороду при необходимости долейте ещё немного масла, разогрейте. Отправьте в сковороду лук, морковь и чеснок.<br/>
+                <br/>
+                11. Обжарьте овощи на сильном огне 3 минуты, часто перемешивая.<br/>
+                <br/>
+                12. Верните куриное филе в сковороду, выложив его на овощи. Туда же влейте кипяток (50 мл).<br/> 
+                Накройте сковороду крышкой и тушите куриное филе с овощами на среднем огне 5 минут.<br/>
+                <br/>
+                13. Затем между куриным филе распределите рис (я его предварительно не промывала).<br/>
+                <br/>
+                14. 400 мл кипятка смешайте с 1 ч. ложкой соли и влейте в сковороду.<br/>
+                <br/>
+                15. Аккуратно перемешайте рис с овощами вокруг куриного филе. На сильном огне доведите жидкость до кипения.<br/>
+                <br/>
+                16. Огонь убавьте до минимума, накройте сковороду крышкой и готовьте блюдо до того момента,<br/>
+                пока рис не будет полностью готов, а воды в сковороде не останется. Мне понадобилось 25 минут.<br/>
+                <br/>
+                17. Куриное филе с рисом, на сковороде, готово!<br/>
+                <br/>
+            </a>
+        </div>
+    </div>
+    <script>
+        function redirectToGallery() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

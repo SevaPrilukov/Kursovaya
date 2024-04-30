@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            background: rgb(176, 176, 176);
+            /* animation: появление 1s ease-out; */
+        }
+
+        /* @keyframes появление {
+            from {
+                opacity: 0;
+                background: white;
+            }
+            to {
+                opacity: 1;
+                background: rgb(176, 176, 176);
+            }
+        } */
+        
+
+        .zag{
+        text-align: center;
+        background-color: rgb(176, 176, 176);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: white;
+        height: 45px;
+        font-family: 'Montserrat', sans-serif;
+        }
+
+        .r {
+            margin: 20px; /* Отступы относительно страницы */
+            background: rgb(220, 220, 220);
+            border-radius: 8px;
+            position: relative; /* Устанавливаем позиционирование как относительное */
+        }
+
+        .photo{
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .video {
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 200px;
+        }
+        .videotext{
+            position: absolute;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .bay{
+            position: absolute;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-left: 230px;
+            font-weight: bold;
+        }
+        .ing{
+            position: absolute;
+            margin-top: 60px;
+            margin-left: 35px;
+            font-size: 20px;
+        }
+        .got{
+            font-size: 24px;
+            margin-left: 450px;
+            font-weight: bold;
+        }
+        .rep{
+            font-size: 24px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        hr {
+            border: 0; /* Убираем стандартную границу */
+            border-top: 5px solid rgb(176, 176, 176); /* Задаем жирную горизонтальную линию */
+        }
+        .rep1{
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        .back-button {
+            position: absolute;
+            background-color: rgba(220, 220, 220, 0.5); /* Цвет кнопки с прозрачностью */
+            color: black; /* Цвет текста */
+            border: none; /* Убираем границу */
+            padding: 10px 20px; /* Отступы внутри кнопки */
+            font-size: 16px; /* Размер шрифта */
+            cursor: pointer; /* Изменение курсора при наведении */
+            border-radius: 5px; /* Закругление углов */
+            margin-top: -40px;
+            margin-left: 20px;
+        }
+
+        /* Стилизация стрелки */
+        .back-button::before {
+            content: "\2190"; /* Код символа стрелки */
+            margin-right: 5px; /* Отступ между стрелкой и текстом */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="zag">Cooking Store</h1>
+    <button class="back-button" onclick="redirectToGallery()">На главную страницу</button>
+    <div class="r">
+        <img src="77.png" class="photo" alt="Photo 1" width="500" height="400" class="image-with-shadow" border-radius="8px">
+        <a class="bay">Ингридиенты</a>
+        <a class="ing">
+            1. Грудка куриная - 1 шт. (400 г).<br/>
+            2. Капуста пекинская - 1 шт.<br/>
+            3. Помидоры черри - 150-200 г.<br/>
+            4. Сыр твердый (желательно пармезан) - 50-70 г.<br/>
+            5. Хлеб белый - 3-4 ломтика.<br/>
+            6. Соль - по вкусу.<br/>
+            7. Масло оливковое - 6 ст.л. (для жарки).<br/>
+            8. Перец черный молотый - 1 ч.л.<br/>
+            9. Чеснок - 4 зубчика.<br/>
+            10. Майонез - 3-4 ст.л.
+        </a>
+        <br/>
+        <hr>
+        <a class="got">Процесс приготовления<br/></a>
+        <iframe class="video" width="400" height="200" src="https://www.youtube.com/embed/oBZu0Tfk0OA" frameborder="0" allowfullscreen></iframe>
+        <a class="videotext">Посмотрите обучабщее видео или<br/> следуйте инструкции ниже</a>
+        <br/>
+        <br/>
+        <hr>
+        <a class="rep">Рецепт</a>
+        <br/>
+        <br/>
+        <div class="rep1">
+            <a>
+                1. Подготовить ингредиенты.<br/>
+                <br/>
+                2. Помыть и очистить от пленок и лишнего жира куриную грудку. Нарезать ее на куски шириной 3 см поперек филе.<br/>
+                <br/>
+                3. Разогреть сковороду с 2 ст.л. оливкового масла. Обжарить с двух сторон курицу до готовности (7-10 минут).<br/>
+                <br/>
+                4. Взять другую сковороду для обжаривания сухарей.<br/> 
+                Так же разогреваем ее с оливковым маслом (4 ст.ложки). Выложить нарезанные на кубики размером 1х1 см сухари на разогретую сковороду.<br/> 
+                Сверху выдавить через чеснокодавку 2-3 зубчика чеснока. Обжарить 5-7 минут до золотистого цвета.<br/>
+                <br/>
+                5. Готовую курицу отставить остывать.<br/>
+                <br/>
+                6. То же сделать с сухарями.<br/>
+                <br/>
+                7. Помыть и нарезать на небольшие кусочки пекинскую капусту.<br/>
+                <br/>
+                8. Нарезать курицу на такие же небольшие кусочки.<br/>
+                <br/>
+                9. Натереть на мелкой терке сыр.<br/>
+                <br/>
+                10. Выложить в салатницу сухари. Перемешать салат.<br/>
+                <br/>
+                11. Смешать 2 измельченных зубчика чеснока, соль и майонез. Это и будет заправка для салата.<br/>
+                <br/>
+                12. Нарезать пополам помидоры черри.<br/>
+                <br/>
+                13. Теперь формируем салат. Выложить салат, а сверху половинки помидора. И заправить соусом.<br/>
+                <br/>
+                14. Приятного аппетита!<br/>
+                <br/>
+            </a>
+        </div>
+    </div>
+    <script>
+        function redirectToGallery() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

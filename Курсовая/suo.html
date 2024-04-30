@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            background: rgb(176, 176, 176);
+            /* animation: появление 1s ease-out; */
+        }
+
+        /* @keyframes появление {
+            from {
+                opacity: 0;
+                background: white;
+            }
+            to {
+                opacity: 1;
+                background: rgb(176, 176, 176);
+            }
+        } */
+        
+
+        .zag{
+        text-align: center;
+        background-color: rgb(176, 176, 176);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: white;
+        height: 45px;
+        font-family: 'Montserrat', sans-serif;
+        }
+
+        .r {
+            margin: 20px; /* Отступы относительно страницы */
+            background: rgb(220, 220, 220);
+            border-radius: 8px;
+            position: relative; /* Устанавливаем позиционирование как относительное */
+        }
+
+        .photo{
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .video {
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 200px;
+        }
+        .videotext{
+            position: absolute;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .bay{
+            position: absolute;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-left: 230px;
+            font-weight: bold;
+        }
+        .ing{
+            position: absolute;
+            margin-top: 60px;
+            margin-left: 35px;
+            font-size: 20px;
+        }
+        .got{
+            font-size: 24px;
+            margin-left: 450px;
+            font-weight: bold;
+        }
+        .rep{
+            font-size: 24px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        hr {
+            border: 0; /* Убираем стандартную границу */
+            border-top: 5px solid rgb(176, 176, 176); /* Задаем жирную горизонтальную линию */
+        }
+        .rep1{
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        .back-button {
+            position: absolute;
+            background-color: rgba(220, 220, 220, 0.5); /* Цвет кнопки с прозрачностью */
+            color: black; /* Цвет текста */
+            border: none; /* Убираем границу */
+            padding: 10px 20px; /* Отступы внутри кнопки */
+            font-size: 16px; /* Размер шрифта */
+            cursor: pointer; /* Изменение курсора при наведении */
+            border-radius: 5px; /* Закругление углов */
+            margin-top: -40px;
+            margin-left: 20px;
+        }
+
+        /* Стилизация стрелки */
+        .back-button::before {
+            content: "\2190"; /* Код символа стрелки */
+            margin-right: 5px; /* Отступ между стрелкой и текстом */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="zag">Cooking Store</h1>
+    <button class="back-button" onclick="redirectToGallery()">На главную страницу</button>
+    <div class="r">
+        <img src="88.png" class="photo" alt="Photo 1" width="500" height="400" class="image-with-shadow" border-radius="8px">
+        <a class="bay">Ингридиенты</a>
+        <a class="ing">
+            1. вода - 2,5-3 л<br/>
+            2. курица (голени, бедра, крылья и другие части курицы) - 600-700 г.<br/>
+            3. лук репчатый (для бульона) - 1 шт.<br/>
+            4. картофель - 3-5 шт.<br/>
+            5. морковь - 1 шт.<br/>
+            6. тонкая вермишель паутинка, звездочки и т.д. - 3 ст.л.<br/>
+            7. сливочное масло - 1-2 ч.л.<br/>
+            8. укроп - по вкусу.<br/>
+            9. соль - по вкусу.<br/>
+            10. свежемолотый перец - по вкусу
+        </a>
+        <br/>
+        <hr>
+        <a class="got">Процесс приготовления<br/></a>
+        <iframe class="video" width="400" height="200" src="https://www.youtube.com/embed/qhH131jxdvQ" frameborder="0" allowfullscreen></iframe>
+        <a class="videotext">Посмотрите обучабщее видео или<br/> следуйте инструкции ниже</a>
+        <br/>
+        <br/>
+        <hr>
+        <a class="rep">Рецепт</a>
+        <br/>
+        <br/>
+        <div class="rep1">
+            <a>
+                1. Курицу вымыть, положить в кастрюлю, залить холодной водой и довести до кипения.<br/>
+                <br/>
+                2. Уменьшить огонь, шумовкой снять пену.<br/>
+                <br/>
+                3. Положить очищенную целую луковицу, и варить при слабом кипении 40-50 минут. За 15 минут до готовности, посолить бульон.<br/>
+                <br/>
+                4. Курицу вынуть из бульона.<br/>
+                <br/>
+                5. Бульон можно процедить через сито.<br/>
+                <br/>
+                6. Картофель нарезать маленькими кубиками или соломкой, положить в бульон и варить 10-15 минут с момента закипания.<br/>
+                <br/>
+                7. В сковороде растопить кусочек сливочного масла, добавить нарезанную кубиками морковь и обжарить 1-2 минуты на среднем огне.<br/>
+                <br/>
+                8. Добавляем в суп морковь.<br/>
+                <br/>
+                9. У курицы отделить мясо от костей и нарезать соломкой.<br/>
+                <br/>
+                10. Кладем в кастрюлю нарезанное куриное мясо, либо целые голени (бедра или крылышки).<br/>
+                <br/>
+                11. Добавляем в суп тонкую вермишель паутинку или другие мелкие макароны, например, звездочки.<br/>
+                <br/>
+                12. Кладем укроп, выключаем огонь и даем настояться под крышкой 10 минут, за это время вермишель дойдет до готовности и не разварится в супе.<br/>
+                <br/>
+                13. Пробуем суп, солим и перчим по вкусу.<br/>
+                <br/>
+            </a>
+        </div>
+    </div>
+    <script>
+        function redirectToGallery() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

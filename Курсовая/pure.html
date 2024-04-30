@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            background: rgb(176, 176, 176);
+            /* animation: появление 1s ease-out; */
+        }
+
+        /* @keyframes появление {
+            from {
+                opacity: 0;
+                background: white;
+            }
+            to {
+                opacity: 1;
+                background: rgb(176, 176, 176);
+            }
+        } */
+        
+
+        .zag{
+        text-align: center;
+        background-color: rgb(176, 176, 176);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: white;
+        height: 45px;
+        font-family: 'Montserrat', sans-serif;
+        }
+
+        .r {
+            margin: 20px; /* Отступы относительно страницы */
+            background: rgb(220, 220, 220);
+            border-radius: 8px;
+            position: relative; /* Устанавливаем позиционирование как относительное */
+        }
+
+        .photo{
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .video {
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 200px;
+        }
+        .videotext{
+            position: absolute;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .bay{
+            position: absolute;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-left: 230px;
+            font-weight: bold;
+        }
+        .ing{
+            position: absolute;
+            margin-top: 60px;
+            margin-left: 35px;
+            font-size: 20px;
+        }
+        .got{
+            font-size: 24px;
+            margin-left: 450px;
+            font-weight: bold;
+        }
+        .rep{
+            font-size: 24px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        hr {
+            border: 0; /* Убираем стандартную границу */
+            border-top: 5px solid rgb(176, 176, 176); /* Задаем жирную горизонтальную линию */
+        }
+        .rep1{
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        .back-button {
+            position: absolute;
+            background-color: rgba(220, 220, 220, 0.5); /* Цвет кнопки с прозрачностью */
+            color: black; /* Цвет текста */
+            border: none; /* Убираем границу */
+            padding: 10px 20px; /* Отступы внутри кнопки */
+            font-size: 16px; /* Размер шрифта */
+            cursor: pointer; /* Изменение курсора при наведении */
+            border-radius: 5px; /* Закругление углов */
+            margin-top: -40px;
+            margin-left: 20px;
+        }
+
+        /* Стилизация стрелки */
+        .back-button::before {
+            content: "\2190"; /* Код символа стрелки */
+            margin-right: 5px; /* Отступ между стрелкой и текстом */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="zag">Cooking Store</h1>
+    <button class="back-button" onclick="redirectToGallery()">На главную страницу</button>
+    <div class="r">
+        <img src="22.png" class="photo" alt="Photo 1" width="500" height="400" class="image-with-shadow" border-radius="8px">
+        <a class="bay">Ингридиенты</a>
+        <a class="ing">
+            1. Фарш домашний - 400 г<br/>
+            2. Картофель — 10 шт.<br/>
+            3. Молоко - 250 мл.<br/>
+            4. Белый хлеб - 50 г.<br/>
+            5. Специи - по вкусу.<br/>
+            6. Репчатый лук - 80 г.<br/>
+            7. Сливочное масло 72% - 50 г.<br/>
+            8. Пшеничная мука - 50 г.
+        </a>
+        <br/>
+        <hr>
+        <a class="got">Процесс приготовления<br/></a>
+        <iframe class="video" width="400" height="200" src="https://www.youtube.com/embed/sJ_eo1a_TaY" frameborder="0" allowfullscreen></iframe>
+        <a class="videotext">Посмотрите обучабщее видео или<br/> следуйте инструкции ниже</a>
+        <br/>
+        <br/>
+        <hr>
+        <a class="rep">Рецепт</a>
+        <br/>
+        <br/>
+        <div class="rep1">
+            <a>
+                1. Очистить картофель, варить до полной готовности. При надрезе нож должен утопать.<br/>
+                <br/>
+                2. Растолочь картошку, добавляя теплое молоко и сливочное масло. Консистенция пюре должна быть как у плотной сметаны. Добавить специи по вкусу.<br/>
+                <br/>
+                3. В фарш добавить ломтики хлеба, предварительно размяв их в кашу. Натереть на крупной терке лук. Специи добавить по вкусу. Сформировать котлеты.<br/>
+                <br/>
+                4. Котлеты обвалять в тонком слое муки и жарить до готовности, по 5 минут с каждой стороны. Подавать вместе с пюре, украсить зеленым луком.<br/>
+                <br/>
+            </a>
+        </div>
+    </div>
+    <script>
+        function redirectToGallery() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

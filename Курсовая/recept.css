@@ -1,0 +1,57 @@
+nav {
+    background-color: rgb(176, 176, 176);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.zag{
+    text-align: center;
+    background-color: rgb(176, 176, 176);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    height: 45px;
+    padding-top: 8.6px;
+}
+
+.a{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0px;
+}
+
+.image-container {
+    display: flex;
+    overflow: hidden;
+    background: black;
+}
+
+.image-container img {
+    max-width: 16.8%;
+    height: auto;
+}
+.transparent-image {
+    opacity: 0.8; 
+  }

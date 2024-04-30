@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: rgb(176, 176, 176);
+        font-family: 'Roboto', sans-serif;
+    }
+    .text{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tab-container {
+            width: 90%;
+            margin: 20px auto;
+            background-color: rgb(220, 220, 220);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab {
+            display: none;
+            /* text-align: center; */
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+
+        .tab.active {
+            display: block;
+        }
+
+        .tab-header {
+            background-color: rgb(150, 150, 150);
+            overflow: hidden;
+        }
+
+        .tab-header a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .tab-header a:hover {
+            background-color: rgb(190, 190, 190);
+            color: black;
+        }
+        .text2{
+            font-size: 19px;
+        }
+
+        h2{
+            /* margin-left: -650px; */
+            margin-left: 40px;
+        }
+</style>
+<body>
+    <div class="tab-container">
+        <div class="text">
+            Добро пожаловать в мир вдохновляющих вкусов и увлекательных кулинарных приключений!<br/>
+            В нашей вкладке "Кулинарные тайны" вы обнаружите бесконечный источник вдохновения для<br/>
+            приготовления вкусных блюд. Разнообразие рецептов, от простых и быстрых до утонченных<br/>
+            гастрономических шедевров, позволит вам раскроить свой кулинарный потенциал.
+        </div>
+        <div class="tab-header">
+            <a onclick="openTab(event, 'daily')">Ежедневные рецепты</a>
+            <a onclick="openTab(event, 'categories')">Специальные категории</a>
+            <a onclick="openTab(event, 'chefs')">Секреты шеф-поваров</a>
+            <a onclick="openTab(event, 'events')">Специальные события</a>
+            <a onclick="openTab(event, 'ratings')">Гастрономические рейтинги</a>
+        </div>
+    
+        <div id="daily" class="tab active">
+            <h2>Ежедневные рецепты</h2>
+            <a class="text2">Откройте для себя новые идеи для ежедневных блюд, которые приготовлены в домашних условиях. Простые рецепты с подробными пошаговыми инструкциями помогут вам создавать вкусные угощения для себя и своих близких.</a>
+        </div>
+    
+        <div id="categories" class="tab">
+            <h2>Специальные категории</h2>
+            <a class="text2">Изучите различные кулинарные темы: от вегетарианских и диетических блюд до разнообразных кулинарных традиций мира. Мы предоставляем множество рецептов, удовлетворяющих самые изысканные вкусы.</a>
+        </div>
+    
+        <div id="chefs" class="tab">
+            <h2>Секреты шеф-поваров</h2>
+            <a class="text2">Получите ценные советы от профессиональных шеф-поваров, которые помогут вам улучшить навыки готовки, подобрать ингредиенты и придать вашим блюдам неповторимый вкус.</a>
+        </div>
+    
+        <div id="events" class="tab">
+            <h2>Специальные события</h2>
+            <a class="text2">Не упустите возможность удивить гостей во время праздников и особых событий. Мы предоставляем рецепты для создания волшебных блюд, которые станут настоящим украшением вашего стола.</a>
+        </div>
+    
+        <div id="ratings" class="tab">
+            <h2>Гастрономические рейтинги</h2>
+            <a class="text2">Отзывы и оценки блюд помогут вам выбрать лучшие рецепты, а также поделиться своим опытом с другими любителями кулинарии.</a>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-header")[0].getElementsByTagName("a");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: rgb(176, 176, 176);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .r{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 30px;
+        background: rgb(220, 220, 220);
+        border-radius: 8px;
+    }
+
+    .photo {
+        margin: 10px;
+        cursor: pointer;
+        margin-top: 70px;
+        position: relative;
+        margin: 10px;
+        background-color: rgb(150, 150, 150);
+        border-radius: 15px;
+        overflow: hidden;
+        margin-top: 70px;
+
+    }
+
+    .caption {
+        text-align: center;
+        color:white ;
+    }
+
+    .image-with-shadow {
+            object-fit: cover; /* Задайте необходимый способ масштабирования изображения */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Задайте параметры тени: смещение по x, смещение по y, размытие и цвет */
+    }
+</style>
+<body>
+    <div class="r">
+        <div class="photo" onclick="openLink('borche.html')">
+            <img src="11.png" alt="Photo 1" width="350" height="250" class="image-with-shadow">
+            <div class="caption"><h3>Борщ с говядиной</h3></div>
+        </div>
+    
+        <div class="photo" onclick="openLink('pure.html')">
+            <img src="22.png" alt="Photo 2" width="350" height="250" class="image-with-shadow">
+            <div class="caption"><h3>Пюре с котлетами</h3></div>
+        </div>
+    
+        <div class="photo" onclick="openLink('bolon.html')">
+            <img src="33.png" alt="Photo 2" width="350" height="250" class="image-with-shadow">
+            <div class="caption"><h3>Болоньезе</h3></div>
+        </div>
+    
+        <div class="photo" onclick="openLink('svinina.html')">
+            <img src="44.png" alt="Photo 2" width="350" height="250" class="image-with-shadow">
+            <div class="caption"><h3>Свинина с овощами по домашнему</h3></div>
+        </div>
+    
+        <div class="photo" onclick="openLink('kur.html')">
+            <img src="55.png" alt="Photo 2" width="350" height="250" class="image-with-shadow">
+            <div class="caption"><h3>Куриная грудка с рисом</h3></div>
+        </div>
+    
+        <div class="photo" onclick="openLink('beef.html')">
+            <img src="66.png" alt="Photo 2" width="350" height="250" class="image-with-shadow">
+            <div class="caption"><h3>Стейк</h3></div>
+        </div>
+    
+        <div class="photo" onclick="openLink('cezar.html')">
+            <img src="77.png" alt="Photo 2" width="350" height="250" class="image-with-shadow">
+            <div class="caption"><h3>Цезарь с курицей</h3></div>
+        </div>
+    
+        <div class="photo" onclick="openLink('suo.html')">
+            <img src="88.png" alt="Photo 2" width="350" height="250" class="image-with-shadow">
+            <div class="caption"><h3>Куриный суп</h3></div>
+        </div>
+    
+        <div class="photo" onclick="openLink('fric.html')">
+            <img src="99.png" alt="Photo 2" width="350" height="250" class="image-with-shadow">
+            <div class="caption"><h3>Фрикадельки</h3></div>
+        </div>
+    </div>
+
+    <script>
+        function openLink(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(176, 176, 176);
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрирование содержимого по горизонтали */
+            padding-top: 20px; /* Добавляем небольшой отступ сверху */
+        }
+
+        #searchContainer {
+            width: 66%; /* Ширина равная ширине экрана */
+            display: flex;
+            justify-content: center; /* Центрирование по горизонтали */
+            margin-bottom: 30px; /* Отступ снизу для разделения от контента */
+            background-color: rgb(220, 220, 220);
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        #searchInput {
+            padding: 10px;
+            width: 100%;
+            max-width: 800px;
+            border: 2px solid rgb(150, 150, 150);
+            background-color: rgb(220, 220, 220);
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        #searchInput:focus {
+            /* border-color: rgb(0, 128, 255); */
+            border-color:white ;
+        }
+
+        /* #searchInput:hover {
+            cursor: pointer;
+            color: white;
+        } */
+
+        .r {
+            padding-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 0px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            background: rgb(220, 220, 220);
+            border-radius: 20px;
+        }
+
+        .photo {
+            margin: 10px;
+            cursor: pointer;
+            position: relative;
+            margin: 10px;
+            background-color: rgb(150, 150, 150);
+            border-radius: 15px;
+            overflow: hidden;
+            margin-top: 0px;
+            margin-bottom: 70px;
+        }
+
+        .caption {
+            text-align: center;
+            color: white;
+        }
+
+        .image-with-shadow {
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+
+
+        #counter {
+            background-color: rgb(220, 220, 220);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="searchContainer">
+        <input type="text" id="searchInput" onkeyup="searchDishes()" placeholder="Поиск блюда...">
+    </div>
+    <div class="r" id="dishContainer">
+        <!-- Dish cards will be dynamically added here -->
+    </div>
+    <div id="counter">Просмотры: <span id="counterValue">0</span></div>
+
+    <script>
+
+        // Код для счетчика просмотров
+        let counterValue = localStorage.getItem('counter') || 0; // Получаем текущее значение счетчика из localStorage
+        document.getElementById('counterValue').textContent = counterValue; // Устанавливаем текущее значение счетчика
+
+        // Увеличиваем счетчик на 1 и обновляем его на странице и в localStorage
+        function increaseCounter() {
+            counterValue++;
+            document.getElementById('counterValue').textContent = counterValue;
+            localStorage.setItem('counter', counterValue);
+        }
+
+
+
+        // Define an array of dishes with their names and image URLs
+        const dishes = [
+            { name: 'Борщ с говядиной', imgSrc: '11.png', link: 'borche.html' },
+            { name: 'Пюре с котлетами', imgSrc: '22.png', link: 'pure.html' },
+            { name: 'Болоньезе', imgSrc: '33.png', link: 'bolon.html' },
+            { name: 'Свинина с овощами по домашнему', imgSrc: '44.png', link: 'svinina.html' },
+            { name: 'Куриная грудка с рисом', imgSrc: '55.png', link: 'kur.html' },
+            { name: 'Стейк', imgSrc: '66.png', link: 'beef.html' },
+            { name: 'Цезарь с курицей', imgSrc: '77.png', link: 'cezar.html' },
+            { name: 'Куриный суп', imgSrc: '88.png', link: 'suo.html' },
+            { name: 'Фрикадельки', imgSrc: '99.png', link: 'fric.html' }
+        ];
+
+        // Function to generate HTML for each dish card
+        function generateDishCards() {
+            const dishContainer = document.getElementById('dishContainer');
+            dishContainer.innerHTML = ''; // Clear previous content
+
+            dishes.forEach(dish => {
+                const dishCard = `
+                    <div class="photo" onclick="openLink('${dish.link}')">
+                        <img src="${dish.imgSrc}" alt="${dish.name}" width="350" height="250" class="image-with-shadow">
+                        <div class="caption"><h3>${dish.name}</h3></div>
+                    </div>
+                `;
+                dishContainer.innerHTML += dishCard;
+            });
+            increaseCounter();
+        }
+
+        // Function to filter dishes based on search input
+        function searchDishes() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const filteredDishes = dishes.filter(dish => dish.name.toLowerCase().includes(searchTerm));
+            const dishContainer = document.getElementById('dishContainer');
+            
+            dishContainer.innerHTML = ''; // Clear previous content
+
+            filteredDishes.forEach(dish => {
+                const dishCard = `
+                    <div class="photo" onclick="openLink('${dish.link}')">
+                        <img src="${dish.imgSrc}" alt="${dish.name}" width="350" height="250" class="image-with-shadow">
+                        <div class="caption"><h3>${dish.name}</h3></div>
+                    </div>
+                `;
+                dishContainer.innerHTML += dishCard;
+            });
+        }
+
+        // Function to open link in a new tab
+        function openLink(url) {
+            window.open(url, '_blank');
+            increaseCounter();
+        }
+
+        // Generate dish cards on page load
+        generateDishCards();
+    </script>
+</body>
+</html>

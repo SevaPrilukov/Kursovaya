@@ -1,0 +1,12 @@
+FRAMESET{
+    animation: fadeIn 1s ease-in-out;
+    background-color: rgb(176, 176, 176);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

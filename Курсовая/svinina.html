@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            background: rgb(176, 176, 176);
+            /* animation: появление 1s ease-out; */
+        }
+
+        /* @keyframes появление {
+            from {
+                opacity: 0;
+                background: white;
+            }
+            to {
+                opacity: 1;
+                background: rgb(176, 176, 176);
+            }
+        } */
+        
+
+        .zag{
+        text-align: center;
+        background-color: rgb(176, 176, 176);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: white;
+        height: 45px;
+        font-family: 'Montserrat', sans-serif;
+        }
+
+        .r {
+            margin: 20px; /* Отступы относительно страницы */
+            background: rgb(220, 220, 220);
+            border-radius: 8px;
+            position: relative; /* Устанавливаем позиционирование как относительное */
+        }
+
+        .photo{
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .video {
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 200px;
+        }
+        .videotext{
+            position: absolute;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .bay{
+            position: absolute;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-left: 230px;
+            font-weight: bold;
+        }
+        .ing{
+            position: absolute;
+            margin-top: 60px;
+            margin-left: 35px;
+            font-size: 20px;
+        }
+        .got{
+            font-size: 24px;
+            margin-left: 450px;
+            font-weight: bold;
+        }
+        .rep{
+            font-size: 24px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        hr {
+            border: 0; /* Убираем стандартную границу */
+            border-top: 5px solid rgb(176, 176, 176); /* Задаем жирную горизонтальную линию */
+        }
+        .rep1{
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        .back-button {
+            position: absolute;
+            background-color: rgba(220, 220, 220, 0.5); /* Цвет кнопки с прозрачностью */
+            color: black; /* Цвет текста */
+            border: none; /* Убираем границу */
+            padding: 10px 20px; /* Отступы внутри кнопки */
+            font-size: 16px; /* Размер шрифта */
+            cursor: pointer; /* Изменение курсора при наведении */
+            border-radius: 5px; /* Закругление углов */
+            margin-top: -40px;
+            margin-left: 20px;
+        }
+
+        /* Стилизация стрелки */
+        .back-button::before {
+            content: "\2190"; /* Код символа стрелки */
+            margin-right: 5px; /* Отступ между стрелкой и текстом */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="zag">Cooking Store</h1>
+    <button class="back-button" onclick="redirectToGallery()">На главную страницу</button>
+    <div class="r">
+        <img src="44.png" class="photo" alt="Photo 1" width="500" height="400" class="image-with-shadow" border-radius="8px">
+        <a class="bay">Ингридиенты</a>
+        <a class="ing">
+            1. Свинина (мякоть) - 350 г.<br/>
+            2. Фасоль стручковая замороженная - 140 г.<br/>
+            3. Перец болгарский красный - 100 г (0,5 шт.).<br/>
+            4. Морковь - 60 г (0,5 шт.).<br/>
+            5. Лук репчатый - 70 г (1 некрупный).<br/>
+            6. Чеснок - 1 зубчик.<br/>
+            7. Укроп свежий - 5 г (пару веточек).<br/>
+            8. Томатная паста - 0,5 ст. ложки.<br/>
+            9. Мука - 1 ч. ложка.<br/>
+            10. Хмели-сунели - 0,5 ч. ложки.<br/>
+            11. Соль - 0,5 ч. ложки (по вкусу).<br/>
+            12. Перец чёрный молотый - щепотка.
+        </a>
+        <br/>
+        <hr>
+        <a class="got">Процесс приготовления<br/></a>
+        <iframe class="video" width="400" height="200" src="https://www.youtube.com/embed/-7-kVgbe8SQ" frameborder="0" allowfullscreen></iframe>
+        <a class="videotext">Посмотрите обучабщее видео или<br/> следуйте инструкции ниже</a>
+        <br/>
+        <br/>
+        <hr>
+        <a class="rep">Рецепт</a>
+        <br/>
+        <br/>
+        <div class="rep1">
+            <a>
+                1. Подготовьте необходимые ингредиенты. Также для приготовления понадобится кипяток (200 мл) и 1 ч. ложка муки.<br/>
+                Стручковую фасоль можно заранее не размораживать.<br/>
+                <br/>
+                2. Мякоть свинины нарежьте небольшими кубиками.<br/>
+                <br/>
+                3. В сковороде разогрейте подсолнечное масло. Выложите мясо и обжарьте на сильном огне примерно 5 минут, часто перемешивая.<br/>
+                <br/>
+                4. Пока свинина жарится, подготовьте овощи. Лук и морковь очистите, сладкий перец промойте и удалите внутренние перегородки с семенами.<br/>
+                Лук нарежьте тонкими четвертькольцами, а морковь и перец – соломкой.<br/>
+                <br/>
+                5. Переложите лук, морковь и перец в сковороду к мясу.<br/>
+                <br/>
+                6. Продолжайте обжаривать свинину теперь уже с овощами на сильном огне, часто перемешивая, около 7-8 минут.<br/>
+                <br/>
+                7. Затем влейте кипяток (200 мл), добавьте томатную пасту и присыпьте всё мукой.<br/>
+                <br/>
+                8. Перемешайте и тушите мясо с овощами под крышкой на медленном огне 15 минут.<br/>
+                <br/>
+                9. После свинину в соусе посолите, поперчите и всыпьте приправу хмели-сунели.<br/>
+                <br/>
+                10. Также добавьте замороженную стручковую фасоль.<br/>
+                <br/>
+                11. Перемешайте и тушите содержимое сковороды под крышкой на медленном огне ещё 10 минут.<br/>
+                <br/>
+                12. Готовое блюдо сдобрите измельчённым укропом и чесноком, очищенным и пропущенным через пресс.<br/>
+                <br/>
+                13. Перемешайте. Снимите сковороду с плиты.<br/>
+                <br/>
+                14. Свинина, тушенная с овощами и стручковой фасолью в томатном соусе, готова!<br/>
+                <br/>
+                15. Подавайте рагу к столу в горячем виде с хлебом или гарниром.<br/>
+                <br/>
+                16. Приятного аппетита!<br/>
+                <br/>
+            </a>
+        </div>
+    </div>
+    <script>
+        function redirectToGallery() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

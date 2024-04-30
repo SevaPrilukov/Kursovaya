@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            background: rgb(176, 176, 176);
+            /* animation: появление 1s ease-out; */
+        }
+
+        /* @keyframes появление {
+            from {
+                opacity: 0;
+                background: white;
+            }
+            to {
+                opacity: 1;
+                background: rgb(176, 176, 176);
+            }
+        } */
+        
+
+        .zag{
+        text-align: center;
+        background-color: rgb(176, 176, 176);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: white;
+        height: 45px;
+        font-family: 'Montserrat', sans-serif;
+        }
+
+        .r {
+            margin: 20px; /* Отступы относительно страницы */
+            background: rgb(220, 220, 220);
+            border-radius: 8px;
+            position: relative; /* Устанавливаем позиционирование как относительное */
+        }
+
+        .photo{
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .video {
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 200px;
+        }
+        .videotext{
+            position: absolute;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .bay{
+            position: absolute;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-left: 230px;
+            font-weight: bold;
+        }
+        .ing{
+            position: absolute;
+            margin-top: 60px;
+            margin-left: 35px;
+            font-size: 20px;
+        }
+        .got{
+            font-size: 24px;
+            margin-left: 450px;
+            font-weight: bold;
+        }
+        .rep{
+            font-size: 24px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        hr {
+            border: 0; /* Убираем стандартную границу */
+            border-top: 5px solid rgb(176, 176, 176); /* Задаем жирную горизонтальную линию */
+        }
+        .rep1{
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        .back-button {
+            position: absolute;
+            background-color: rgba(220, 220, 220, 0.5); /* Цвет кнопки с прозрачностью */
+            color: black; /* Цвет текста */
+            border: none; /* Убираем границу */
+            padding: 10px 20px; /* Отступы внутри кнопки */
+            font-size: 16px; /* Размер шрифта */
+            cursor: pointer; /* Изменение курсора при наведении */
+            border-radius: 5px; /* Закругление углов */
+            margin-top: -40px;
+            margin-left: 20px;
+        }
+
+        /* Стилизация стрелки */
+        .back-button::before {
+            content: "\2190"; /* Код символа стрелки */
+            margin-right: 5px; /* Отступ между стрелкой и текстом */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="zag">Cooking Store</h1>
+    <button class="back-button" onclick="redirectToGallery()">На главную страницу</button>
+    <div class="r">
+        <img src="99.png" class="photo" alt="Photo 1" width="500" height="400" class="image-with-shadow" border-radius="8px">
+        <a class="bay">Ингридиенты</a>
+        <a class="ing">
+            1. Говядина - 500 г.<br/>
+            2. Лук репчатый - 1 шт. (100 г).<br/>
+            3. Яйца - 1 шт.<br/>
+            4. Масло сливочное (или топленое) - 100 г.<br/>
+            5. Томат-пюре - 60 г.<br/>
+            6. Мука - 20 г.<br/>
+            7. Уксус винный - 80 г.<br/>
+            8. ТСахар - 1-2 ст. ложки (по вкусу).<br/>
+            9. Соль - 1 ч. ложка (по вкусу).<br/>
+            10. Перец черный молотый - 0,25 ч. ложки (по вкусу).<br/>
+            11. Перец красный - на кончике ножа (по вкусу).<br/>
+            12. Зелень петрушки - 6 веточек (по вкусу).
+        </a>
+        <br/>
+        <hr>
+        <a class="got">Процесс приготовления<br/></a>
+        <iframe class="video" width="400" height="200" src="https://www.youtube.com/embed/GECrujkgImY" frameborder="0" allowfullscreen></iframe>
+        <a class="videotext">Посмотрите обучабщее видео или<br/> следуйте инструкции ниже</a>
+        <br/>
+        <br/>
+        <hr>
+        <a class="rep">Рецепт</a>
+        <br/>
+        <br/>
+        <div class="rep1">
+            <a>
+                1. Продукты по списку к рецепту фрикаделек с томатной подливой.<br/>
+                <br/>
+                2. Мякоть говядины отделить от костей. Из костей сварить бульон. Для этого кости вымыть,<br/> 
+                залить холодной водой (1 л), довести до кипения, снять шум. Варить бульон на небольшом огне под крышкой около часа.<br/>
+                <br/>
+                3. Мякоть разрезать на куски, два раза пропустить через мясорубку.<br/>
+                <br/>
+                4. Лук очистить, вымыть, мелко нарезать.<br/>
+                <br/>
+                5. Добавить в фарш соль, пeрец, часть мелко нарезанного репчатого лука (50 г), яйцо.<br/>
+                <br/>
+                6. Тщательно перемешать фарш.<br/>
+                <br/>
+                7. Мокрыми руками разделать фарш на небольшие шарики (размером с грецкий орех), которые обвалять в муке.<br/>
+                <br/>
+                8. На сковороду выложить масло, растопить. В горячее масло выложить подготовленные фрикадельки.<br/>
+                <br/>
+                9. Затем их обжарить на среднем огне до золотисто с двух сторон (1-2 минуты с каждой стороны).<br/>
+                <br/>
+                10. Выложить фрикадельки в кастрюлю.<br/>
+                <br/>
+                11. В горячее масло выложить вторую половину лука. Обжарить лук на среднем огне до золотистости, помешивая (2-3 минуты).<br/>
+                <br/>
+                12. В другую сухую сковороду выложить муку. Муку поджарить до темно-коричневого цвета на среднем огне, помешивая, 2-3 минуты.<br/>
+                <br/>
+                13. Муку развести неболь­шим количеством бульона (50 мл). Добавлять частями, хорошо перемешивать, чтобы не было комочков.<br/>
+                <br/>
+                14. Добавить мелко нарезан­ный и обжаренный на масле репчатый лук, томат-пюре.<br/>
+                <br/>
+                15. Затем сахар, красный перец, винный уксус.<br/>
+                <br/>
+                16. Довести все до кипения. Томатная подлива готова.<br/>
+                <br/>
+                17. Обжаренные фрикадельки залить приготовленной томатной подлив­кой.<br/>
+                <br/>
+                18. Затем на небольшом огне под крышкой готовить фрикадельки 3-5 минут.<br/>
+                <br/>
+                19. Фрикадельки с томатной подливкой готовы.<br/>
+                <br/>
+                20. Зелень вымыть, измельчить.<br/>
+                <br/>
+            </a>
+        </div>
+    </div>
+    <script>
+        function redirectToGallery() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

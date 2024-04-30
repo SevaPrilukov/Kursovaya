@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap">
+    <title>Форма с поддержкой</title>
+    <style>
+        .a {
+            margin-left: 50px;
+            margin-right: 50px;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: rgb(176, 176, 176);
+        }
+
+        .form-container {
+            max-width: 600px; /* Увеличиваем максимальную ширину формы */
+            margin: 50px auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 15px;
+            padding: 8px;
+            width: calc(100% - 16px); /* Ширина 100% минус внутренний отступ */
+            height: 100px;
+            resize: vertical; /* Разрешаем вертикальное изменение размера textarea */
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 2s ease;
+            font-size: 19px;
+            max-width: 150px;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color:dodgerblue; /* Цвет при наведении мыши */
+        }
+
+        #notification {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background-color: rgb(220, 220, 220);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">
+            <a>
+                Здравствуйте, вас приветствует служба поддержки данного сайта. Пожалуйста, опишите вашу проблему, и мы ответим вам как можно скорее. Нам важно, чтобы наш сайт оставил у вас только положительные впечатления.
+            </a>
+        </div>
+        <div class="form-container">
+            <form id="supportForm">
+                <label for="issue">Опишите вашу проблему:</label>
+                <textarea id="issue" name="issue" rows="4" required></textarea>
+                <button type="button" onclick="submitForm()">Отправить</button>
+            </form>
+            <div id="notification">Ваша проблема отправлена в службу поддержки!</div>
+        </div>
+    </div>
+
+<script>
+    function submitForm() {
+        // Добавьте здесь код для отправки данных формы на сервер, если необходимо.
+
+        // Очистка формы
+        document.getElementById("supportForm").reset();
+
+        // Показ уведомления
+        document.getElementById("notification").style.display = "block";
+
+        // Скрытие уведомления через 3 секунды (3000 миллисекунд)
+        setTimeout(function () {
+            document.getElementById("notification").style.display = "none";
+        }, 3000);
+    }
+</script>
+
+</body>
+</html>
